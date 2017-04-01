@@ -3,80 +3,136 @@
 <head>
 	<title>Ba_Li</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/jquery.carousel-3d.default.css">
+	<!-- <link rel="stylesheet" href="css/jquery.carousel-3d.default.css"> -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
+	<div class="as-container" style="display: none; width: 100%;">
+		<div class="as-close">
+			<img src="images/close-popup.png" alt="">
+		</div>
+		<div class="field-name">Размер шрифта</div>
+		<div class="logic-section" id="font-size">
+			
+			<button value="decrease">A -</button>
+			<!-- <button value="font-size-default">א</button> -->
+			<button value="increase">A +</button>
+		</div>
+
+		<div class="field-name">Оттенки серого</div>
+		<div class="logic-section" id="grayscale">
+			<button value="grayscale">Включить</button>
+			 <button value="grayscale-default">Отключить</button>
+		</div>
+
+		<div class="field-name">Сепия</div>
+		<div class="logic-section" id="sepia">
+			<button value="sepia">Включить</button>
+			<button value="sepia-default">Отключить</button>
+		</div>
+
+		<div class="field-name">Контраст</div>
+		<div class="logic-section" id="contrast">
+			<button value="contrast">Включить</button>
+			<button value="contrast-default">Отключить</button>
+		</div>
+
+		<div class="field-name">Инверсия</div>
+		<div class="logic-section" id="invert">
+			<button value="invert">Включить</button>
+			<button value="invert-default">Отключить</button>
+		</div>
+
+		<div class="field-name">Контрастный курсор</div>
+		<div class="logic-section" id="cursor">
+			<button value="cursor">Включить</button>
+			<button value="cursor-default">Отключить</button>
+		</div>
+
+		<div class="field-name">Подсветить ссылки</div>
+		<div class="logic-section" id="links">
+			<button value="links">Включить</button>
+			<button value="links-default">Отключить</button>
+		</div>
+	</div>
+
+
 	<div class="wrapper">
+			<div class="popup-background"></div>
+			<div class="popup">
+			<img class="close-popup" src="images/close-popup.png" alt="">
+			<h2 class="title">Что-то сдесь</h2>
+			<div class="logo"></div>
+				
+				<form action="">
+					<input type="text" placeholder="Фамилия Имя">
+					<input type="tel" placeholder="Телефон">
+					<input type="email" placeholder="E-Mail">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Я хочу экономить на ..."></textarea>
+					<input type="submit" value="ПОЗВОНИТЕ МНЕ">
+				</form>
+			
+		</div>
+<!-- <div class="handicap-icon"></div> -->
+
 		<div class="icon-block">
 			<div class="icons">
-				<div class="lang">ע</div>
-				<div class="accessibility"><img src="images/accessibility-icon.png" alt=""></div>
+				<div class="lang"><a href="he.html">ע</a></div>
+				<div class="accessibility handicap-icon"><img src="images/accessibility-icon.png" alt=""></div>
 			</div>
 			<div class="logo">logo</div>
 		</div>
 		<div class="container">
+
 			<h1>Революция цен на рынке коммуникаций начинается здесь!</h1>
 			<h2>Хотите платить меньше? Получите от нас предложение! </h2>
 			<h2>На чем вы желаете экономить?</h2>
 
 			<div class="block-container">
-				<div class="block">
-					<div id="carousel_tv">
-					  <img class="cloud9-item" src="images/icons/tv/1.png" alt="Item #1">
-					  <img class="cloud9-item" src="images/icons/tv/2.png" alt="Item #2">
-					  <img class="cloud9-item" src="images/icons/tv/3.png" alt="Item #3">
-					</div>
 
-					<div class="button">Телевидение</div>
+				<div class="block">
+					<ul class="tv_slider slider">
+					  <li><div><img src="images/icons/tv/1.png"></div></li>
+					  <li><div><img src="images/icons/tv/2.png"></div></li>
+					  <li><div><img src="images/icons/tv/3.png"></div></li>
+  					  <li><div><img src="images/icons/tv/1.png"></div></li>
+					  <li><div><img src="images/icons/tv/2.png"></div></li>
+					  <li><div><img src="images/icons/tv/3.png"></div></li>
+					</ul>
+
+					<div class="button" data-source="tv">Телевидение</div>
 				</div>
+
+
 				<div class="block">
-					<div id="carousel_internet">
-  <ul class="carousel">
-    <!-- <li class="item active"></li> -->
+					<ul class="internet_slider slider">
+					  <li><div><img src="images/icons/internet/1.png"></div></li>
+					  <li><div><img src="images/icons/internet/2.png"></div></li>
+					  <li><div><img src="images/icons/internet/3.png"></div></li>
+					  <li><div><img src="images/icons/internet/4.png"></div></li>
+					  <li><div><img src="images/icons/internet/5.png"></div></li>
+					  <li><div><img src="images/icons/internet/6.png"></div></li>
+					  <li><div><img src="images/icons/internet/7.png"></div></li>
+					</ul>
 
-					  <li class="item">
-						  <img class="cloud9-item" src="images/icons/internet/1.jpg" alt="Item #1">
-					</li>
-					  <li class="item">
-						  <img class="cloud9-item" src="images/icons/internet/2.jpg" alt="Item #1">
-					</li>
-					  <li class="item">
-						  <img class="cloud9-item" src="images/icons/internet/3.jpg" alt="Item #1">
-					</li>
-					  <li class="item">
-						  <img class="cloud9-item" src="images/icons/internet/4.jpg" alt="Item #2">
-					</li>
-					  <li class="item">
-						  <img class="cloud9-item" src="images/icons/internet/5.jpg" alt="Item #2">
-					</li>
-					  <li class="item">
-						  <img class="cloud9-item" src="images/icons/internet/6.jpg" alt="Item #2">
-					</li>
-					  <li class="item">
-						  <img class="cloud9-item" src="images/icons/internet/7.jpg" alt="Item #3">
-					</li>
-					  <li class="item">
-						  <img class="cloud9-item" src="images/icons/internet/8.jpg" alt="Item #3">
-					</li>
-					  <li class="item">
-						  <img class="cloud9-item" src="images/icons/internet/9.jpg" alt="Item #3">
-					</li>
-</ul>
-					</div>
-
-					<div class="button">Телевидение</div>
+					<div class="button" data-source="internet">Интернет</div>
 				</div>
-				<div class="block">
-					<div id="carousel_mobile">
-					  <img class="cloud9-item" src="images/icons/tv/1.png" alt="Item #1">
-					  <img class="cloud9-item" src="images/icons/tv/2.png" alt="Item #2">
-					  <img class="cloud9-item" src="images/icons/tv/3.png" alt="Item #3">
-					</div>
 
-					<div class="button">Телевидение</div>
+
+				<div class="block">
+					<ul class="mobile_slider slider">
+					  <li><div><img src="images/icons/phone/1.png"></div></li>
+					  <li><div><img src="images/icons/phone/2.png"></div></li>
+					  <li><div><img src="images/icons/phone/3.png"></div></li>
+					  <li><div><img src="images/icons/phone/4.png"></div></li>
+					  <li><div><img src="images/icons/phone/5.png"></div></li>
+					  <li><div><img src="images/icons/phone/6.png"></div></li>
+					  <li><div><img src="images/icons/phone/7.png"></div></li>
+					</ul>
+
+					<div class="button" data-source="mobile">Сотовая связь</div>
 				</div>
 			</div>
 		</div>
@@ -84,18 +140,21 @@
 
 		<footer>
 			<div class="footer-inner">
-				<div class="skysoft-dev">skysoft</div>
-				<div class="rules">רתאה ןונקת</div>
+				<div class="skysoft-dev">
+					<a href="http://skysoft.co.il" class="copy" target="_blank">
+						<img src="http://cannabics.com/wp-content/themes/cannabics/images/favico.png" alt="SkySoft">
+						<span>SkySoft Development</span>
+					</a>
+				</div>
+				<a href="some.pdf" target="_blank" class="rules">רתאה ןונקת</a>
 			</div>
 		</footer>
 	</div>
 	<!-- script section -->
 
 
-
-  <!--<script src="http://localhost:35729/livereload.js"></script>-->
-  <script src="js/jquery.js"></script>
-	<script src="js/jquery.circular-carousel.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.cubeSlider.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
